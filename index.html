@@ -1,0 +1,822 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl_carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl_carousel/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Font Awesome JS-->
+    <script defer src="fonts/font-awesome/js/fontawesome-all.min.js"></script>
+
+    <title>Fashion Home page</title>
+</head>
+<body>
+
+<!--Modal-->
+<div class="modal fade bd-example-modal-lg" id="modalCenter" tabindex="-1" role="dialog"
+     aria-labelledby="modalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-4 modal-padding">
+                            <div class="ib-image_2"></div>
+                        </div>
+                        <div class="col-12 col-md-8 modal-padding">
+                            <div class="content-left">
+                                <div class="card-img-overlay ib-card-overlay">
+                                    <h1 class="text-uppercase montserrat-extrabold text-special">Special offer of the
+                                        month</h1>
+                                    <p class="opensans-regular text-under_special">Black long sleeve</p>
+                                    <p class="montserrat-regular text-under_special"><s
+                                            class="pr-sm-3 pr-1">$105</s><span
+                                            class="p-1 text-special montserrat-bold">$65</span>
+                                        <button type="button"
+                                                class="btn btn-light text-uppercase montserrat-regular button-light button-details">
+                                            Shop now
+                                        </button>
+                                    </p>
+
+                                    <button type="button"
+                                            class="btn timer text-center text-uppercase montserrat-semibold">
+                                        <ul class="list-unstyled mb-2">
+                                            <li class="ib-list_1">09</li>
+                                            <li class="ib-list_2 pb-1">....</li>
+                                            <li class="ib-list_3">hours</li>
+                                        </ul>
+                                    </button>
+                                    <button type="button"
+                                            class="btn timer text-center text-uppercase montserrat-semibold">
+                                        <ul class="list-unstyled mb-2">
+                                            <li class="ib-list_1">56</li>
+                                            <li class="ib-list_2 pb-1">....</li>
+                                            <li class="ib-list_3">minutes</li>
+                                        </ul>
+                                    </button>
+                                    <button type="button"
+                                            class="btn timer text-center text-uppercase montserrat-semibold">
+                                        <ul class="list-unstyled mb-2">
+                                            <li class="ib-list_1">11</li>
+                                            <li class="ib-list_2 pb-1">....</li>
+                                            <li class="ib-list_3">seconds</li>
+                                        </ul>
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Modal Subscribe-->
+<div class="modal fade" id="modal_open" tabindex="-1" role="dialog" aria-labelledby="modal_openTitle"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal_openTitle">Subscribe and Save!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <form class="was-validated">
+                    <div class="form-row">
+
+                        <div class="form-group col-6">
+                            <label for="inputName">First Name</label>
+                            <input type="text" class="form-control is-invalid" id="inputName" required>
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="inputLastName">Last Name</label>
+                            <input type="text" class="form-control is-invalid" id="inputLastName" required>
+                        </div>
+
+                        <div class="form-group col-12">
+                            <label for="inputUserName">Username</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                </div>
+                                <input type="text" class="form-control is-invalid" id="inputUserName"
+                                       aria-describedby="inputGroupPrepend" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-12">
+                            <label for="inputEmail1">Email</label>
+                            <input type="email" class="form-control is-invalid" id="inputEmail1"
+                                   aria-describedby="emailHelp" required>
+                        </div>
+
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-12 opensans-italic">Also give us more details to get extra
+                            discount!
+                        </div>
+                        <br>
+                        <div class="form-group col-12">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group col-12">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                   placeholder="Apartment, studio, or floor">
+                        </div>
+
+                        <div class="form-group col-7">
+                            <label for="inputCity">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-5 align-items-center">
+                            <label class="mr-sm-2" for="inlineFormCustomSelect">State</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-7">
+                            <label for="inputZip">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+
+
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        I let you send me more info to my address.
+                                    </label>
+                                </div>
+                            </div>
+
+
+                        <div class="form-group col-6">
+                            <button type="button" class="btn btn-secondary btn-modal" data-dismiss="modal">Close
+                            </button>
+                        </div>
+                        <div class="form-group col-6">
+                            <button type="button" class="btn btn-info btn-modal">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Back to top button -->
+<a id="scroll_to_top" class="scroll-to-top-button"><i class="fal fa-chevron-circle-up fa-3x"></i></a>
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top text-uppercase ib-navbar">
+
+    <div class="d-flex flex-column block-brand">
+        <a class="navbar-brand montserrat-extrabold brand-title" href="#">Fashion</a>
+        <span class="montserrat-regular brand-text">
+                Tagline here
+        </span>
+    </div>
+
+    <div class="icons d-flex justify-content-around">
+        <a href="#" class="icon-nav"><i class="fas fa-shopping-bag"></i></a>
+        <a href="#" class="icon-nav"><i class="far fa-search"></i></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+
+    <div class="collapse navbar-collapse w-25" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-md-0 justify-content-between montserrat-light nav-size ib-navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Women</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Men</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Find stores</a>
+            </li>
+        </ul>
+    </div>
+
+</nav>
+
+<div class="progress-container">
+    <div class="progress-bar" id="my_bar"></div>
+</div>
+
+<div class="border-bg"></div>
+
+<div class="d-flex">
+    <div class="icons-left d-flex flex-column align-items-center justify-content-center">
+        <a href="#" class="icon-left"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="icon-left"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="icon-left"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#" class="icon-left"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="icon-left"><p class="icon-left_text text-uppercase montserrat-semibold m-0">Follow
+            us</p></a>
+    </div>
+    <div id="carouselExampleControls" class="carousel slide transition" data-interval="false">
+        <div class="carousel-inner">
+            <div class="carousel-item bg active">
+
+                <div class="image-bg"></div>
+                <div class="card-img-overlay static">
+                    <div class="row">
+                        <div class="col-md-11 col-xl-6 offset-xl-6 offset-md-1 p-xl-0 text-uppercase montserrat-semibold ib-card-title-top">
+                            <h5 class="card-title ib-card-title">Summer</h5>
+                            <h5 class="card-title ib-card-title">Collection</h5>
+                        </div>
+
+                        <div class="col-md-11 col-xl-6 offset-xl-6 offset-md-1 p-xl-0 mt-xl-4">
+                            <p class="card-text montserrat-semibold size-18 mb-4">01
+                                <span class="montserrat-regular size-14 text-uppercase pl-4">Men's wear</span></p>
+
+                            <a href="#" class="circle-icon"><i class="fal fa-angle-right"></i></a>
+                            <a href="#" class="circle-icon"><i class="fas fa-heart fa-xs"></i></a>
+                            <a href="#" class="circle-icon"><i class="fas fa-share-alt fa-xs"></i></a>
+                        </div>
+
+                        <div class="col-md-11 col-xl-3 offset-xl-6 offset-md-1 p-xl-0">
+                            <p class="openSans-regular size-14 text-overlay">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit.
+                                Consectetur ducimus earum et eum expedita facilis id in incidunt iste libero odio qui
+                                rem similique veniam, vitae.
+                                Aspernatur, consectetur culpa delectus dolor doloremque eligendi esse harum laudantium
+                                molestiae nam natus nihil nobis
+                                numquam omnis optio pariatur perspiciatis, praesentium quasi quidem quis repellendus
+                                tempora temporibus totam velit veniam vero voluptatem.</p>
+                            <button type="button" data-target="#modalCenter" data-toggle="modal"
+                                    class="btn btn-dark text-uppercase button-dark montserrat-regular">Shop now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item bg">
+
+                <div class="image-bg"></div>
+                <div class="card-img-overlay static">
+                    <div class="row">
+                        <div class="col-md-11 col-xl-6 offset-xl-6 offset-md-1 p-xl-0 text-uppercase montserrat-semibold ib-card-title-top">
+                            <h5 class="card-title ib-card-title">Summer</h5>
+                            <h5 class="card-title ib-card-title">Collection</h5>
+                        </div>
+
+                        <div class="col-md-11 col-xl-6 offset-xl-6 offset-md-1 p-xl-0 mt-xl-4">
+                            <p class="card-text montserrat-semibold size-18 mb-4">01
+                                <span class="montserrat-regular size-14 text-uppercase pl-4">Men's wear</span></p>
+
+                            <a href="#" class="circle-icon"><i class="fal fa-angle-right"></i></a>
+                            <a href="#" class="circle-icon"><i class="fas fa-heart fa-xs"></i></a>
+                            <a href="#" class="circle-icon"><i class="fas fa-share-alt fa-xs"></i></a>
+                        </div>
+
+                        <div class="col-md-11 col-xl-3 offset-xl-6 offset-md-1 p-xl-0">
+                            <p class="openSans-regular size-14 text-overlay">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit.
+                                Consectetur ducimus earum et eum expedita facilis id in incidunt iste libero odio qui
+                                rem similique veniam, vitae.
+                                Aspernatur, consectetur culpa delectus dolor doloremque eligendi esse harum laudantium
+                                molestiae nam natus nihil nobis
+                                numquam omnis optio pariatur perspiciatis, praesentium quasi quidem quis repellendus
+                                tempora temporibus totam velit veniam vero voluptatem.</p>
+                            <button type="button"
+                                    class="btn btn-dark text-uppercase button-dark montserrat-regular">Shop now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item bg">
+
+                <div class="image-bg"></div>
+                <div class="card-img-overlay static">
+                    <div class="row">
+                        <div class="col-md-11 col-xl-6 offset-xl-6 offset-md-1 p-xl-0 text-uppercase montserrat-semibold ib-card-title-top">
+                            <h5 class="card-title ib-card-title">Summer</h5>
+                            <h5 class="card-title ib-card-title">Collection</h5>
+                        </div>
+
+                        <div class="col-md-11 col-xl-6 offset-xl-6 offset-md-1 p-xl-0 mt-xl-4">
+                            <p class="card-text montserrat-semibold size-18 mb-4">01
+                                <span class="montserrat-regular size-14 text-uppercase pl-4">Men's wear</span></p>
+
+                            <a href="#" class="circle-icon"><i class="fal fa-angle-right"></i></a>
+                            <a href="#" class="circle-icon"><i class="fas fa-heart fa-xs"></i></a>
+                            <a href="#" class="circle-icon"><i class="fas fa-share-alt fa-xs"></i></a>
+                        </div>
+
+                        <div class="col-md-11 col-xl-3 offset-xl-6 offset-md-1 p-xl-0">
+                            <p class="openSans-regular size-14 text-overlay">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit.
+                                Consectetur ducimus earum et eum expedita facilis id in incidunt iste libero odio qui
+                                rem similique veniam, vitae.
+                                Aspernatur, consectetur culpa delectus dolor doloremque eligendi esse harum laudantium
+                                molestiae nam natus nihil nobis
+                                numquam omnis optio pariatur perspiciatis, praesentium quasi quidem quis repellendus
+                                tempora temporibus totam velit veniam vero voluptatem.</p>
+                            <button type="button"
+                                    class="btn btn-dark text-uppercase button-dark montserrat-regular">Shop now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item bg">
+
+                <div class="image-bg"></div>
+                <div class="card-img-overlay static">
+                    <div class="row">
+                        <div class="col-md-11 col-xl-6 offset-xl-6 offset-md-1 p-xl-0 text-uppercase montserrat-semibold ib-card-title-top">
+                            <h5 class="card-title ib-card-title">Summer</h5>
+                            <h5 class="card-title ib-card-title">Collection</h5>
+                        </div>
+
+                        <div class="col-md-11 col-xl-6 offset-xl-6 offset-md-1 p-xl-0 mt-xl-4">
+                            <p class="card-text montserrat-semibold size-18 mb-4">01
+                                <span class="montserrat-regular size-14 text-uppercase pl-4">Men's wear</span></p>
+
+                            <a href="#" class="circle-icon"><i class="fal fa-angle-right"></i></a>
+                            <a href="#" class="circle-icon"><i class="fas fa-heart fa-xs"></i></a>
+                            <a href="#" class="circle-icon"><i class="fas fa-share-alt fa-xs"></i></a>
+                        </div>
+
+                        <div class="col-md-11 col-xl-3 offset-xl-6 offset-md-1 p-xl-0">
+                            <p class="openSans-regular size-14 text-overlay">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit.
+                                Consectetur ducimus earum et eum expedita facilis id in incidunt iste libero odio qui
+                                rem similique veniam, vitae.
+                                Aspernatur, consectetur culpa delectus dolor doloremque eligendi esse harum laudantium
+                                molestiae nam natus nihil nobis
+                                numquam omnis optio pariatur perspiciatis, praesentium quasi quidem quis repellendus
+                                tempora temporibus totam velit veniam vero voluptatem.</p>
+                            <button type="button"
+                                    class="btn btn-dark text-uppercase button-dark montserrat-regular">Shop now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev ib-carousel-control-prev arrow-back text-uppercase"
+           href="#carouselExampleControls"
+           role="button" data-slide="prev"><span class="ib-prev">Prev</span>
+        </a>
+        <a class="carousel-control-next ib-carousel-control-next arrow text-uppercase" href="#carouselExampleControls"
+           role="button" data-slide="next"><span class="ib-next">Next</span>
+        </a>
+    </div>
+</div>
+<div class="container">
+
+    <ul class="nav justify-content-center montserrat-semibold mb-lg-0" id="myNav">
+        <li class="nav-item"><a class="nav-link  ib-nav-link active" href="#">All</a></li>
+        <li class="nav-item"><a class="nav-link ib-nav-link" href="#">spring-summer</a></li>
+        <li class="nav-item"><a class="nav-link ib-nav-link" href="#">sweatshirt</a></li>
+        <li class="nav-item"><a class="nav-link ib-nav-link" href="#">sneakers</a></li>
+        <li class="nav-item"><a class="nav-link ib-nav-link" href="#">gadgets</a></li>
+        <li class="nav-item"><a class="nav-link ib-nav-link" href="#">outdoor</a></li>
+    </ul>
+
+    <div class="grid-container">
+        <div class="grid-item item1">
+            <div class="card-img-overlay ib-card-img-overlay montserrat-bold text-uppercase">
+                <h4 class="card-image-item1">Buy 2 get</h4>
+                <h4 class="card-image-item1">Up 50% off</h4>
+            </div>
+        </div>
+
+        <div class="grid-item item2">
+            <div class="card-img-overlay ib-card-img-overlay-item2">
+                <div class="label montserrat-regular text-uppercase">New</div>
+                <div class="ib-item2 montserrat-bold">
+                    <p class="text-item2 raleway-medium">Winter Jacket</p>
+                    <h4 class="card-image-item2-3 text-uppercase">Vintage look</h4>
+                    <h4 class="card-image-item2-3 text-uppercase">for women</h4>
+                    <button type="button"
+                            class="btn btn-dark text-uppercase button-dark button-dark-item2 montserrat-regular">Shop
+                        now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-item item3">
+            <div class="card-img-overlay ib-card-img-overlay-item3">
+                <p class="text-item3 raleway-medium">Winter Jacket</p>
+                <h4 class="card-image-item2-3 text-uppercase montserrat-bold">Fashion</h4>
+                <h4 class="card-image-item2-3 text-uppercase montserrat-bold">for men</h4>
+                <button type="button"
+                        class="btn btn-dark text-uppercase button-dark button-dark-item2 montserrat-regular">Shop
+                    now
+                </button>
+            </div>
+        </div>
+        <div class="grid-item item4"></div>
+
+        <div class="grid-item item5">
+            <div class="card-img-overlay ib-card-img-overlay-item2">
+                <div class="label montserrat-regular text-uppercase">New</div>
+                <div class="ib-item5 montserrat-bold">
+                    <h4 class="card-image-item5 text-uppercase">40% off on sunglasses</h4>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item item6">
+            <div class="card-img-overlay ib-card-img-overlay-item6">
+                <div class="row">
+                    <div class="col-5 offset-1 col-md-6 col-sm-5 offset-sm-7 offset-md-6 text-uppercase">
+                        <h4 class="card-image-item6 montserrat-semibold m-0">We offer brand new styles</h4>
+                        <p class="text-item6 montserrat-regular m-0">Sign up now and get 50% off</p>
+                        <button type="button"
+                                class="btn btn-light button-big-light montserrat-regular text-uppercase">See full
+                            collection
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="container">
+        <h2 class="title-types text-uppercase montserrat-semibold text-center">Product types</h2>
+        <p class="text-types montserrat-regular text-center">up to 30% discount</p>
+
+        <div id="categories-carousel" class="owl-carousel ib-category-carousel">
+            <div class="col-">
+                <img src="img/men.png" alt="">
+                <div class="card-img-overlay text-center position-button">
+                    <button type="button" class="btn btn-dark text-uppercase
+                     button-big-dark montserrat-regular">Shop men
+                    </button>
+                </div>
+            </div>
+            <div class="col-">
+                <img src="img/women.png" alt="">
+                <div class="card-img-overlay text-center position-button">
+                    <button type="button" class="btn btn-dark text-uppercase
+                     button-bdark montserrat-regular">Shop women
+                    </button>
+                </div>
+            </div>
+            <div class="col-">
+                <img src="img/kids.png" alt="">
+                <div class="card-img-overlay text-center position-button">
+                    <button type="button" class="btn btn-dark text-uppercase
+                     button-big-dark montserrat-regular">Shop kids
+                    </button>
+                </div>
+            </div>
+            <div class="col-">
+                <img src="img/kids.png" alt="">
+                <div class="card-img-overlay text-center position-button">
+                    <button type="button" class="btn btn-dark text-uppercase
+                     button-big-dark montserrat-regular">Shop kids
+                    </button>
+                </div>
+            </div>
+            <div class="col-">
+                <img src="img/men.png" alt="">
+                <div class="card-img-overlay text-center position-button">
+                    <button type="button" class="btn btn-dark text-uppercase
+                     button-big-dark montserrat-regular">Shop men
+                    </button>
+                </div>
+            </div>
+            <div class="col-">
+                <img src="img/women.png" alt="">
+                <div class="card-img-overlay text-center position-button">
+                    <button type="button" class="btn btn-dark text-uppercase
+                     button-bdark montserrat-regular">Shop women
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="container">
+        <h2 class="title-types text-uppercase montserrat-semibold text-center">Featured products</h2>
+        <ul class="nav justify-content-center montserrat-semibold mb-sm-4 mb-md-0">
+            <li class="nav-item">
+                <a class="nav-link  ib-products-link active" href="">All</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link ib-products-link" href="">spring-summer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link ib-products-link" href="">sweatshirt</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link ib-products-link" href="">sneakers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link ib-products-link" href="">gadgets</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link ib-products-link" href="">outdoor</a>
+            </li>
+        </ul>
+
+        <div class="ib-products-carousel">
+            <div class="col- product-item">
+                <img src="img/gucci-men.png" alt="">
+                <p class="text-products-title text-capitalize montserrat-bold">Ted baker women's light</p>
+                <p class="montserrat-regular text-products">Gucci</p>
+                <p class="montserrat-regular text-price"><s>$70.00</s>
+                    <span class="montserrat-bold" style="color: #1a1a1a; padding-left: 10px">$120.00</span>
+                </p>
+            </div>
+            <div class="col- product-item">
+                <img src="img/gucci-women.png" alt="">
+                <p class="text-products-title text-capitalize montserrat-bold">Ted baker women's light</p>
+                <p class="montserrat-regular text-products">Gucci</p>
+                <p class="montserrat-regular text-price"><s>$70.00</s>
+                    <span class="montserrat-bold" style="color: #1a1a1a; padding-left: 10px">$120.00</span>
+                </p>
+            </div>
+            <div class="col- product-item">
+                <img src="img/gucci-women2.png" alt="">
+                <p class="text-products-title text-capitalize montserrat-bold">Ted baker women's light</p>
+                <p class="montserrat-regular text-products">Gucci</p>
+                <p class="montserrat-regular text-price"><s>$70.00</s>
+                    <span class="montserrat-bold" style="color: #1a1a1a; padding-left: 10px">$120.00</span>
+                </p>
+            </div>
+            <div class="col- product-item">
+                <img src="img/gucci-women3.png" alt="">
+                <p class="text-products-title text-capitalize montserrat-bold">Ted baker women's light</p>
+                <p class="montserrat-regular text-products">Gucci</p>
+                <p class="montserrat-regular text-price"><s>$70.00</s>
+                    <span class="montserrat-bold" style="color: #1a1a1a; padding-left: 10px">$120.00</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <button type="button"
+                    class="btn btn-light button-products montserrat-regular text-uppercase">Show more
+            </button>
+        </div>
+
+        <div class="subscribe">
+            <div class="card-img-overlay ib-card-img-overlay-subscribe text-uppercase text-center">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-4 col-lg-6 offset-md-1">
+                        <h4 class="title-subscribe montserrat-semibold m-0">Subscribe to our newsletter</h4>
+                        <p class="text-subscribe montserrat-regular m-0">Sign up now and get 75% off</p>
+
+                        <button type="button" data-target="#modal_open" data-toggle="modal"
+                                class="btn btn-dark button-subscribe montserrat-regular text-uppercase">Subscribe
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h2 class="title-types text-uppercase montserrat-semibold text-center mb-5">F A Q</h2>
+
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link ib-btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What do you want?
+                        <i class="fal fa-plus-circle"></i>
+                        <i class="fal fa-minus-circle"></i>
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed ib-btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Do you like it?
+                        <i class="fal fa-plus-circle"></i>
+                        <i class="fal fa-minus-circle"></i>
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed ib-btn" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Do you remember it?
+                        <i class="fal fa-plus-circle"></i>
+                        <i class="fal fa-minus-circle"></i>
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed ib-btn" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Do you like to travel?
+                        <i class="fal fa-plus-circle"></i>
+                        <i class="fal fa-minus-circle"></i>
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFive">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed ib-btn" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        What about this?
+                        <i class="fal fa-plus-circle"></i>
+                        <i class="fal fa-minus-circle"></i>
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="container">
+        <h2 class="title-types text-uppercase montserrat-semibold text-center mb-5">Our blogs & news</h2>
+        <div class="ib-blog">
+            <div class="col-12 col-md-6 blog-item">
+                <img src="img/admin.png" alt="">
+                <div class="content-admin text-center">
+                    <h3 class="title-admin montserrat-semibold text-uppercase">The 15 secrets about fashion people</h3>
+                    <p class="text-admin opensans-italic">January 12, 2020 by admin</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 blog-item">
+                <img src="img/admin-2.png" alt="">
+                <div class="content-admin text-center">
+                    <h3 class="title-admin montserrat-semibold text-uppercase">The 15 secrets about fashion people</h3>
+                    <p class="text-admin opensans-italic">January 13, 2020 by admin</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 blog-item">
+                <img src="img/admin-2.png" alt="">
+                <div class="content-admin text-center">
+                    <h3 class="title-admin montserrat-semibold text-uppercase">The 15 secrets about fashion people</h3>
+                    <p class="text-admin opensans-italic">January 13, 2020 by admin</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 blog-item">
+                <img src="img/admin.png" alt="">
+                <div class="content-admin text-center">
+                    <h3 class="title-admin montserrat-semibold text-uppercase">The 15 secrets about fashion people</h3>
+                    <p class="text-admin opensans-italic">January 14, 2020 by admin</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="background">
+    <div class="container contact-details">
+        <div class="row">
+            <div class="col-6 col-md-4 col-lg-2">
+                <ul class="list-unstyled ib-list-unstyled montserrat-light mb-0">
+                    <li class="title-footer montserrat-bold text-uppercase">Information</li>
+                    <li class="link-footer pb-2">The brand</li>
+                    <li class="link-footer pb-2">Local stores</li>
+                    <li class="link-footer pb-2">Customer service</li>
+                    <li class="link-footer pb-2">Privacy & cookies</li>
+                    <li class="link-footer pb-2">Site map</li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <ul class="list-unstyled ib-list-unstyled montserrat-light mb-0 text-capitalize">
+                    <li class="title-footer montserrat-bold text-uppercase">My profile</li>
+                    <li class="link-footer pb-2">Getting started</li>
+                    <li class="link-footer pb-2">FAQs</li>
+                    <li class="link-footer pb-2">Buying guide</li>
+                    <li class="link-footer pb-2">Order returns</li>
+                    <li class="link-footer pb-2">Affiliate program</li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <ul class="list-unstyled ib-list-unstyled montserrat-light mb-0">
+                    <li class="title-footer montserrat-bold text-uppercase">Your account</li>
+                    <li class="link-footer pb-2">Shipping & returns</li>
+                    <li class="link-footer pb-2">Secure shopping</li>
+                    <li class="link-footer pb-2">Testimonials</li>
+                    <li class="link-footer pb-2">Award winning</li>
+                    <li class="link-footer pb-2">Ethical trading</li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <ul class="list-unstyled ib-list-unstyled montserrat-light mb-0 pl-lg-4">
+                    <li class="title-footer montserrat-bold text-uppercase">Lookbook</li>
+                    <li class="link-footer pb-2">Getting started</li>
+                    <li class="link-footer pb-2">FAQs</li>
+                    <li class="link-footer pb-2">Buying guide</li>
+                    <li class="link-footer pb-2">Order returns</li>
+                    <li class="link-footer pb-2">Affiliate program</li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <ul class="list-unstyled ib-list-unstyled montserrat-light mb-0">
+                    <li class="title-footer montserrat-bold text-uppercase">Contact details</li>
+                    <li class="pb-2"><span class="text-footer">Telephone:</span> 0123-456-789</li>
+                    <li class="details-footer"><span class="text-footer">Email:</span> free@psd.in.ua</li>
+                    <li class="pb-1 text-capitalize"><span class="text-address montserrat-bold">Head office:</span> 245
+                        Yellow House,
+                    </li>
+                    <li class="text-capitalize">Main Street, London. 456789</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container text-center">
+    <p class="footer-subscribe mb-0"><span class="circle">C</span>Copyright e-commerce 1.0. 2022 by PSD.IN.UA</p>
+    <a class="navbar-brand montserrat-extrabold brand-footer text-uppercase" href="#">Fashion</a>
+    <p class="montserrat-regular brand-text-footer text-uppercase">Tagline here</p>
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+<script src="js/owl_carousel/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
